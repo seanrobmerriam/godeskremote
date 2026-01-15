@@ -2,7 +2,7 @@
 
 A web-based operating system written in Go, featuring a custom binary protocol, WebSocket communication, security foundation, and a JavaScript client.
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Start the web server
@@ -20,7 +20,7 @@ go run ./cmd/client-demo/main.go
 # Open browser to http://localhost:8080
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 webos/
@@ -100,7 +100,7 @@ webos/
     └── PROTOCOL_SPEC.md          # Protocol specification
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 ### Communication Layer
 
@@ -168,7 +168,7 @@ PromiseSocket     // Generic socket access
 PromiseResolve    // DNS resolution
 ```
 
-## 📦 Packages
+## Packages
 
 ### pkg/protocol
 Binary protocol for client-server communication.
@@ -273,7 +273,7 @@ go test ./pkg/router/ -v -cover
 go test ./pkg/server/ -v -cover
 ```
 
-## 📊 Coverage Summary
+## Coverage Summary
 
 | Package | Coverage |
 |---------|----------|
@@ -285,7 +285,7 @@ go test ./pkg/server/ -v -cover
 | pkg/server | 55.6% |
 | pkg/websocket | 45.5% |
 
-## 🚀 Running the Server
+## Running the Server
 
 ### Development
 
@@ -316,7 +316,7 @@ go run ./cmd/websocket-demo/main.go
 go run ./cmd/security-demo/main.go
 ```
 
-## 🔧 Configuration
+## Configuration
 
 The server can be configured via environment variables:
 
@@ -328,7 +328,7 @@ WEBOS_KEY_FILE=key.pem    # TLS key
 WEBOS_STATIC_DIR=./static # Static files directory
 ```
 
-## 📝 API Reference
+## API Reference
 
 ### Protocol Opcodes
 
@@ -355,23 +355,3 @@ WEBOS_STATIC_DIR=./static # Static files directory
 | GET | /ready | Readiness check |
 | GET | /metrics | Metrics endpoint |
 | WS | /ws | WebSocket upgrade |
-
-## 🤝 Contributing
-
-1. Read the AGENTS.md guidelines
-2. Follow the phase prompts in prompts/
-3. Write tests first (TDD approach)
-4. Maintain 85%+ test coverage
-5. Document all public APIs
-6. No external dependencies
-
-## 📄 License
-
-This project is part of the WebOS development effort.
-
-## 🔗 Related Documentation
-
-- [Protocol Specification](docs/PROTOCOL_SPEC.md)
-- [Phase Prompts](prompts/)
-- [DEVPLAN.md](DEVPLAN.md)
-- [PROJECT.md](PROJECT.md)
